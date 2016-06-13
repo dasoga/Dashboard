@@ -13,6 +13,7 @@
 		2C7E19781D0D227600638CE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C7E19761D0D227600638CE9 /* Main.storyboard */; };
 		2C7E197A1D0D227600638CE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C7E19791D0D227600638CE9 /* Assets.xcassets */; };
 		2C7E197D1D0D227600638CE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C7E197B1D0D227600638CE9 /* LaunchScreen.storyboard */; };
+		2C7E19861D0D284A00638CE9 /* ConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7E19851D0D284A00638CE9 /* ConnectionManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		2C7E19791D0D227600638CE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C7E197C1D0D227600638CE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C7E197E1D0D227600638CE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C7E19841D0D284A00638CE9 /* ConnectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConnectionManager.h; path = ConnectionManager/ConnectionManager.h; sourceTree = "<group>"; };
+		2C7E19851D0D284A00638CE9 /* ConnectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ConnectionManager.m; path = ConnectionManager/ConnectionManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		2C7E196C1D0D227600638CE9 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
+				2C7E19871D0D284E00638CE9 /* Connection Manager */,
 				2C7E19701D0D227600638CE9 /* AppDelegate.h */,
 				2C7E19711D0D227600638CE9 /* AppDelegate.m */,
 				2C7E19731D0D227600638CE9 /* ViewController.h */,
@@ -77,6 +81,15 @@
 				2C7E196E1D0D227600638CE9 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2C7E19871D0D284E00638CE9 /* Connection Manager */ = {
+			isa = PBXGroup;
+			children = (
+				2C7E19841D0D284A00638CE9 /* ConnectionManager.h */,
+				2C7E19851D0D284A00638CE9 /* ConnectionManager.m */,
+			);
+			name = "Connection Manager";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C7E19751D0D227600638CE9 /* ViewController.m in Sources */,
+				2C7E19861D0D284A00638CE9 /* ConnectionManager.m in Sources */,
 				2C7E19721D0D227600638CE9 /* AppDelegate.m in Sources */,
 				2C7E196F1D0D227600638CE9 /* main.m in Sources */,
 			);
