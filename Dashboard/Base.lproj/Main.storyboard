@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="va5-bT-ema">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Do connection-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
@@ -24,14 +24,14 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IeG-Bd-MZZ">
-                                <rect key="frame" x="261" y="550" width="78" height="30"/>
+                                <rect key="frame" x="261" y="501" width="78" height="30"/>
                                 <state key="normal" title="Disconnect"/>
                                 <connections>
                                     <action selector="disconnect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H2R-VR-h7e"/>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iit-YW-Onn">
-                                <rect key="frame" x="20" y="201" width="560" height="341"/>
+                                <rect key="frame" x="20" y="201" width="560" height="292"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XqO-UO-QJJ">
@@ -91,6 +91,7 @@
                             </mask>
                         </variation>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Do connection" id="uoj-DQ-jNt"/>
                     <connections>
                         <outlet property="btnDisconnect" destination="IeG-Bd-MZZ" id="5cs-ka-T3W"/>
                         <outlet property="swVisible" destination="XqO-UO-QJJ" id="coO-3q-10T"/>
@@ -100,7 +101,44 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="288" y="321"/>
+            <point key="canvasLocation" x="-126" y="1193"/>
+        </scene>
+        <!--Draw-->
+        <scene sceneID="Chd-xM-1PV">
+            <objects>
+                <viewController id="04v-1R-0Xz" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="T4k-j6-9kx"/>
+                        <viewControllerLayoutGuide type="bottom" id="a3q-ti-Pc7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SsW-SV-xb8" customClass="DrawView">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Draw" id="gpM-Mo-vmz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jYa-eA-EWp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-72" y="1969"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="qGQ-uC-oWy">
+            <objects>
+                <tabBarController id="va5-bT-ema" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="TSV-mL-UQX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="kmd-b0-nfZ"/>
+                        <segue destination="04v-1R-0Xz" kind="relationship" relationship="viewControllers" id="kU3-l0-HOs"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8lE-Pt-M9R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-874" y="1407"/>
         </scene>
     </scenes>
 </document>

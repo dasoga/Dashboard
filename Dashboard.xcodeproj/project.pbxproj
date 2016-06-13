@@ -14,6 +14,7 @@
 		2C7E197A1D0D227600638CE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C7E19791D0D227600638CE9 /* Assets.xcassets */; };
 		2C7E197D1D0D227600638CE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C7E197B1D0D227600638CE9 /* LaunchScreen.storyboard */; };
 		2C7E19861D0D284A00638CE9 /* ConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7E19851D0D284A00638CE9 /* ConnectionManager.m */; };
+		2C7E198A1D0F04BB00638CE9 /* DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7E19891D0F04BB00638CE9 /* DrawView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		2C7E197E1D0D227600638CE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C7E19841D0D284A00638CE9 /* ConnectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConnectionManager.h; path = ConnectionManager/ConnectionManager.h; sourceTree = "<group>"; };
 		2C7E19851D0D284A00638CE9 /* ConnectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ConnectionManager.m; path = ConnectionManager/ConnectionManager.m; sourceTree = "<group>"; };
+		2C7E19881D0F04BB00638CE9 /* DrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawView.h; sourceTree = "<group>"; };
+		2C7E19891D0F04BB00638CE9 /* DrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				2C7E19731D0D227600638CE9 /* ViewController.h */,
 				2C7E19741D0D227600638CE9 /* ViewController.m */,
 				2C7E19761D0D227600638CE9 /* Main.storyboard */,
+				2C7E19881D0F04BB00638CE9 /* DrawView.h */,
+				2C7E19891D0F04BB00638CE9 /* DrawView.m */,
 				2C7E19791D0D227600638CE9 /* Assets.xcassets */,
 				2C7E197B1D0D227600638CE9 /* LaunchScreen.storyboard */,
 				2C7E197E1D0D227600638CE9 /* Info.plist */,
@@ -166,6 +171,7 @@
 				2C7E19861D0D284A00638CE9 /* ConnectionManager.m in Sources */,
 				2C7E19721D0D227600638CE9 /* AppDelegate.m in Sources */,
 				2C7E196F1D0D227600638CE9 /* main.m in Sources */,
+				2C7E198A1D0F04BB00638CE9 /* DrawView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
